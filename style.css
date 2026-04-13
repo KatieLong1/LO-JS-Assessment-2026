@@ -1,0 +1,62 @@
+/* style.css 
+   We will center the logo and make it responsive.
+*/
+
+/* 1. Basic Page Reset (Good practice) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f8fa; /* A light, creamy color that complements your logo */
+}
+
+h1{
+    text-align: center;
+}
+
+
+
+main{
+    padding-top: 50px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/* 2. Style the Header Area */
+.main-header {
+    background-color: #ffffff; /* White header for contrast */
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd; /* Subtle border under the header */
+}
+
+/* 3. Style the Logo Container */
+.logo-container {
+    max-width: 1200px; /* Optional: Sets a max-width for the header content */
+    margin: 0 auto;    /* Centers the container horizontally */
+    display: flex;
+    justify-content: center; /* Absolutely centers the logo on the page */
+    align-items: center;
+}
+
+/* 4. Style the Link and Image */
+.logo-link {
+    display: block; /* Makes the link cover the entire image */
+    text-decoration: none; /* Removes any text underlining */
+}
+
+
+
+.logo-image {
+    /* This is the most critical part:
+       It makes your logo responsive so it scales well 
+       on mobile screens.
+    */
+    max-width: 250px; /* Set your ideal logo size here (e.g., 250px wide) */
+    height: auto;     /* Keeps the proportion correct */
+    display: block;    /* Prevents weird gaps below the image */
+}
